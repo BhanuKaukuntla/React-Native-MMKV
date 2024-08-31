@@ -34,6 +34,13 @@ export default function Layout() {
   return (
     <Tabs screenOptions={TabScreenOptions} initialRouteName="selected">
       <Tabs.Screen
+        name="notes"
+        options={{
+          title: 'notes',
+          tabBarIcon: tabBarIcon('home'),
+        }}
+      />
+      <Tabs.Screen
         name="home"
         options={{
           title: 'Home',
