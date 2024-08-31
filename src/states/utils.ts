@@ -5,6 +5,7 @@ const storage = new MMKV();
 
 function getItem(key: string): string | null {
   const value = storage.getString(key);
+  console.log(value, 'value');
   return value ? value : null;
 }
 
